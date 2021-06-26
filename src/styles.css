@@ -1,0 +1,100 @@
+.app-wrapper {
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.08fr 1fr;
+  grid-template-areas:
+    ". h h ."
+    ". n m .";
+  grid-gap: 5px;
+  outline: 1px solid red;
+}
+
+/* header */
+.header {
+  grid-area: h;
+  outline: 1px solid green;
+}
+.header__logo {
+  width: 50px;
+  height: auto;
+  float: left;
+  outline: 1px solid blue;
+}
+/* header */
+
+/* navigation */
+.navigation {
+  grid-area: n;
+  outline: 1px solid green;
+  text-align: left;
+}
+.btn-settings {
+  margin: 100px 0 0 0;
+}
+/* navigation */
+
+/* main */
+.main {
+  grid-area: m;
+  display: grid;
+  grid-template-columns: 150px 1fr 0.1fr;
+  grid-auto-rows: 0.5fr 0.4fr 1fr;
+  grid-template-areas:
+    "co co co"
+    "ph bi .."
+    "po po ..";
+  outline: 1px solid green;
+  padding: 0 0 5px 0;
+}
+.main__cover {
+  grid-area: co;
+  background-image: url("https://assets.unenvironment.org/s3fs-public/styles/topics_content_promo/public/2021-05/alberta-2297204_1920.jpg?itok=aim5GFuY");
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: 1px solid blue;
+}
+.main__photo {
+  grid-area: ph;
+  background-image: url("https://static.buddyxyz.com/images/com.PlayCastle.popcat-icon.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  outline: 1px solid blue;
+}
+.main__bio {
+  grid-area: bi;
+  text-align: left;
+  outline: 1px solid blue;
+}
+.main__posts {
+  grid-area: po;
+  outline: 1px solid blue;
+}
+.post-author {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-image: url("https://images.chesscomfiles.com/uploads/v1/user/14269362.f0b7e5ca.1200x1200o.71828821b497.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.post-text {
+  text-align: justify;
+}
+.main__subtitle {
+  text-align: left;
+}
+.main__form {
+  padding: 30px 5px;
+  outline: 1px solid black;
+}
+.main__input {
+  width: 98%;
+  height: 50px;
+}
+.main__submit {
+  float: right;
+}
+/* main */
